@@ -35,7 +35,7 @@ public class MainApp {
          System.out.println();
       }
 
-      System.out.println(users);
+      //System.out.println(users);
       //System.out.println("<===============================================>");
 
 //      userService.getUserWithCar("BMW", 5);
