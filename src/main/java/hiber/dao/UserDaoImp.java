@@ -35,10 +35,7 @@ public class UserDaoImp implements UserDao {
                             "where u.car.model = :model and u.car.series = :series", User.class)
                     .setParameter("model", model)
                     .setParameter("series", series);
-            if (query.getSingleResult() != null) {
-                return query.getSingleResult();
-            }
-            return null;
+            return query.getSingleResult();
         } catch (NoResultException e) {
             return null;
         }
